@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="DeboVIsuals placeholder image">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#dfe4dc"/>
+      <stop offset="1" stop-color="#aeb9ad"/>
+    </linearGradient>
+    <linearGradient id="hill" x2="1" y2="1">
+      <stop stop-color="#89958a"/>
+      <stop offset="1" stop-color="#68756b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="890" cy="240" r="100" fill="#f4f0df" opacity=".8"/>
+  <path d="M0 640 270 370l190 190 240-270 500 430v180H0Z" fill="#a1aa9c"/>
+  <path d="m0 740 290-170 230 150 270-230 410 290v120H0Z" fill="url(#hill)"/>
+  <text x="600" y="820" fill="#f7f7f4" font-family="Arial,sans-serif" font-size="24" letter-spacing="8" text-anchor="middle">DEBOVISUALS · IMAGE PLACEHOLDER</text>
+</svg>
