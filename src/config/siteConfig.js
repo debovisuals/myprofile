@@ -2,14 +2,12 @@ export const siteConfig = {
   brand: "DeboVIsuals",
   tagline: "Photography · Aerial · Film",
   location: "Lagos and Akure Nigeria",
-  // Replace with the WhatsApp number in international format, digits only (no + or spaces).
-  whatsappNumber: "2340000000000",
+  whatsappUrl: "https://wa.me/message/DFNFN775BTIJG1",
   // Replace with the business email address.
   email: "olutobiadebola@gmail.com",
-  // Add the real profile URLs when they are ready. Empty URLs are not rendered.
   socialLinks: [
-    { label: "Instagram", href: "" },
-    { label: "TikTok", href: "" },
-    { label: "YouTube", href: "" },
+    { label: "TikTok", href: "https://www.tiktok.com/@adebolawao" },
+    { label: "Instagram", href: "https://www.instagram.com/olutobiadebola/" },
+    { label: "X", href: "https://x.com/AdebolawaO" },
   ],
 };

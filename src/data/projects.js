@@ -1,6 +1,5 @@
-// These are sample gallery entries, not claimed client work. Replace the titles,
-// locations, descriptions, and media with your own projects. Paths are relative
-// to public/. For videos, set type to "video" and provide a video path.
+// Add completed work here. Every project in this list appears in the Portfolio
+// gallery. Media paths are relative to public/.
 export const projects = [
   {
     id: "quiet-mornings",
@@ -11,7 +10,6 @@ export const projects = [
     type: "image",
     image: "/images/photography/portrait.jpg",
     imageAlt: "Sample portrait photograph",
-    featured: true,
   },
   {
     id: "coastline-study",
@@ -22,7 +20,6 @@ export const projects = [
     type: "image",
     image: "/images/drone-photography/coastline.jpg",
     imageAlt: "Sample aerial photograph",
-    featured: true,
   },
   {
     id: "above-the-city",
@@ -34,7 +31,6 @@ export const projects = [
     image: "/images/drone/drone-film.jpg",
     video: "/videos/drone/above-the-city.mp4",
     imageAlt: "Sample drone film poster",
-    featured: true,
   },
   {
     id: "the-gathering",
@@ -45,7 +41,6 @@ export const projects = [
     type: "image",
     image: "/images/events/event.jpg",
     imageAlt: "Sample event photograph",
-    featured: true,
   },
   {
     id: "made-with-intention",
@@ -56,7 +51,6 @@ export const projects = [
     type: "image",
     image: "/images/commercial/brand-film.jpg",
     imageAlt: "Sample brand film image",
-    featured: true,
   },
   {
     id: "open-water",
@@ -67,7 +61,6 @@ export const projects = [
     type: "image",
     image: "/images/drone-photography/coastline.jpg",
     imageAlt: "Sample aerial landscape",
-    featured: false,
   },
 ];
 

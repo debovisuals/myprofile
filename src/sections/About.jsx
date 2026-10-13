@@ -13,8 +13,8 @@ export default function About() {
           viewport={{ once: true }}
         >
           <img
-            src="/images/profile/profile-placeholder.svg"
-            alt="Profile photograph placeholder — replace with a portrait of DeboVIsuals"
+            src="/images/profile/Hero%202.jpg"
+            alt="Portrait of DeboVIsuals"
             loading="lazy"
             onError={(event) => {
               event.currentTarget.src = "/images/image-fallback.svg";

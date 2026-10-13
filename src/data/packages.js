@@ -1,5 +1,5 @@
-// Sample packages and placeholder pricing only. Replace the price, inclusions,
-// and coverage details with confirmed business information.
+// Portrait, event, and brand packages below are samples; convocation packages
+// use the confirmed pricing and deliverables provided by the business.
 export const packages = [
   {
     id: "portrait-session",
@@ -28,5 +28,32 @@ export const packages = [
     duration: "Scoped to your project",
     deliverables: ["Creative direction", "On-location filming", "Edited film"],
     sample: true,
+  },
+  {
+    id: "convocation-basic",
+    name: "✨ Basic",
+    price: "₦30K",
+    description: "A simple convocation package for one graduate.",
+    duration: "1 graduate",
+    deliverables: ["Planning consultation", "One location", "5 pictures", "Edited digital images"],
+    sample: false,
+  },
+  {
+    id: "convocation-group-3",
+    name: "👥 Group of 3",
+    price: "₦80K",
+    description: "A shared convocation package for three graduates.",
+    duration: "3 graduates",
+    deliverables: ["Planning consultation", "One location", "15 pictures", "Edited digital images"],
+    sample: false,
+  },
+  {
+    id: "convocation-group-5",
+    name: "👥 Group of 5",
+    price: "₦140K",
+    description: "A shared convocation package for five graduates.",
+    duration: "5 graduates",
+    deliverables: ["Planning consultation", "One location", "25 pictures", "Edited digital images"],
+    sample: false,
   },
 ];

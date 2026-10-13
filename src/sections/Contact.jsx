@@ -3,7 +3,6 @@ import { ArrowUpRight, Mail, MapPin } from "lucide-react";
 import SectionHeading from "../components/SectionHeading.jsx";
 import WhatsAppButton from "../components/WhatsAppButton.jsx";
 import { siteConfig } from "../config/siteConfig.js";
-import { createWhatsAppUrl } from "../utils/whatsapp.js";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -14,8 +13,9 @@ export default function Contact() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const message = `Hello DeboVIsuals! My name is ${form.name}. ${form.message}\n\nYou can reach me at ${form.email}.`;
-    window.open(createWhatsAppUrl(message), "_blank", "noopener,noreferrer");
+    const subject = `Project enquiry from ${form.name}`;
+    const body = `Name: ${form.name}\nEmail: ${form.email}\n\nProject details:\n${form.message}`;
+    window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
   return (
@@ -45,8 +45,8 @@ export default function Contact() {
             <input id="contact-email" name="email" type="email" autoComplete="email" required value={form.email} onChange={updateField} />
             <label htmlFor="contact-message">A little about your project</label>
             <textarea id="contact-message" name="message" rows="3" required value={form.message} onChange={updateField} />
-            <button className="button button--dark" type="submit">Continue on WhatsApp <ArrowUpRight size={17} /></button>
-            <span className="contact-form__note">Your message opens in WhatsApp — it isn’t stored on this website.</span>
+            <button className="button button--dark" type="submit">Compose email <ArrowUpRight size={17} /></button>
+            <span className="contact-form__note">Your email app will open with your enquiry — it isn’t stored on this website.</span>
           </form>
         </div>
       </div>

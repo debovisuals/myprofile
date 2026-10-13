@@ -1,7 +1,9 @@
 import { siteConfig } from "../config/siteConfig.js";
 
 export function createWhatsAppUrl(message) {
-  return `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  const url = new URL(siteConfig.whatsappUrl);
+  url.searchParams.set("text", message);
+  return url.toString();
 }
 
 export function openWhatsApp(message) {

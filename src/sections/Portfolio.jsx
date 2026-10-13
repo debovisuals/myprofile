@@ -9,7 +9,7 @@ export default function Portfolio() {
   const [filter, setFilter] = useState("All work");
   const [activeProject, setActiveProject] = useState(null);
   const visibleProjects = projects.filter(
-    (project) => project.featured && (filter === "All work" || project.category === filter),
+    (project) => filter === "All work" || project.category === filter,
   );
 
   return (

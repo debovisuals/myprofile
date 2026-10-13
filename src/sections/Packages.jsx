@@ -14,7 +14,7 @@ export default function Packages() {
         <div className="package-grid">
           {packages.map((packageInfo) => <PackageCard package={packageInfo} key={packageInfo.id} />)}
         </div>
-        <p className="packages-note">Sample packages · pricing and deliverables are placeholders and will be confirmed for each enquiry.</p>
+        <p className="packages-note">Portrait, event and brand packages are samples. Convocation package pricing and picture counts are listed above.</p>
       </div>
     </section>
   );
