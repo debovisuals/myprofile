@@ -14,6 +14,7 @@ export const graduationClients = Array.from({ length: 10 }, (_, clientIndex) => 
         title: `Photo ${String(photoNumber).padStart(2, "0")}`,
         image: placeholderImage,
         imageAlt: `Placeholder for ${clientId}, photo ${photoNumber}`,
+        isPlaceholder: true,
       };
     }),
   };

@@ -87,22 +87,28 @@ img, video { display: block; max-width: 100%; }
 .graduation-gallery__heading h1 { margin: 14px 0 17px; font-family: "Manrope", sans-serif; font-size: clamp(3.2rem, 8vw, 7rem); font-weight: 500; letter-spacing: -.09em; line-height: .98; }
 .graduation-gallery__heading h1 em { font-family: var(--serif); font-weight: 400; }
 .graduation-gallery__intro { max-width: 550px; margin: 0 auto; color: var(--muted); font-size: .96rem; line-height: 1.8; }
+.graduation-gallery__heading-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }
 .graduation-gallery__share { margin-top: 24px; }
+.graduation-gallery__heading-actions .graduation-gallery__share { margin-top: 0; }
 .graduation-gallery__share-status { display: block; min-height: 1.5em; margin-top: 10px; color: var(--muted); font-size: .76rem; }
 .graduation-gallery__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px 20px; }
-.graduation-gallery__index { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 0 0 66px; }
-.graduation-gallery__index a { padding: 9px 13px; border: 1px solid #daddd5; border-radius: 30px; color: #555851; font-size: .74rem; transition: background .2s, color .2s; }
-.graduation-gallery__index a:hover { background: var(--ink); color: white; }
-.graduation-gallery__clients { display: grid; gap: 68px; }
-.graduation-client { scroll-margin-top: 105px; padding-top: 28px; border-top: 1px solid #daddd5; }
+.graduation-gallery__clients { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.graduation-client-card { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px; border: 1px solid #daddd5; background: rgb(247 247 244 / 72%); }
+.graduation-client-card h2 { margin: 5px 0; font-family: "Manrope", sans-serif; font-size: 1.45rem; font-weight: 600; letter-spacing: -.05em; }
+.graduation-client-card > div:first-child > p:last-child { margin: 0; color: var(--muted); font-size: .75rem; }
+.graduation-client-card__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.graduation-client-card__actions .button { min-height: 42px; padding-inline: 13px; font-size: .74rem; }
+.graduation-client { padding-top: 28px; border-top: 1px solid #daddd5; }
 .graduation-client__heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 25px; }
 .graduation-client__heading h2 { margin: 5px 0 0; font-family: "Manrope", sans-serif; font-size: clamp(1.7rem, 3vw, 2.5rem); font-weight: 600; letter-spacing: -.06em; }
-.graduation-client__actions { display: flex; align-items: center; gap: 14px; }
 .graduation-client__count { color: var(--muted); font-size: .72rem; white-space: nowrap; }
-.graduation-client__actions .button { min-height: 40px; padding-inline: 13px; font-size: .74rem; }
-.graduation-client__status { display: block; min-height: 1.5em; margin-top: 8px; color: var(--muted); font-size: .72rem; text-align: right; }
+.graduation-photo { min-width: 0; }
+.graduation-photo__download { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 40px; margin-top: 10px; border: 1px solid #c6c9c1; background: transparent; color: var(--ink); font-size: .74rem; font-weight: 600; transition: background .2s, color .2s, border-color .2s; }
+a.graduation-photo__download:hover { border-color: var(--ink); background: var(--ink); color: white; }
+button.graduation-photo__download:disabled { color: #858980; cursor: not-allowed; }
 .graduation-gallery__empty-note { margin-top: 52px; padding: 20px; border: 1px solid #daddd5; color: var(--muted); font-size: .82rem; line-height: 1.7; text-align: center; }
 .graduation-gallery__empty-note p { margin: 0; }
+.graduation-gallery__empty-note .button { margin-top: 14px; }
 .graduation-gallery__credit { margin: 48px 0 0; color: var(--muted); font-size: .7rem; letter-spacing: .08em; text-align: center; }
 .gallery-page { min-height: calc(100vh - 180px); padding: 84px 0 108px; background: #f1f2ed; }
 .gallery-page__heading { max-width: 760px; margin-bottom: 48px; }
@@ -291,11 +297,11 @@ img, video { display: block; max-width: 100%; }
   .graduation-gallery__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px 12px; }
   .graduation-gallery__index { justify-content: flex-start; gap: 6px; margin-bottom: 42px; }
   .graduation-gallery__index a { padding: 8px 10px; font-size: .68rem; }
-  .graduation-gallery__clients { gap: 44px; }
+  .graduation-gallery__clients { grid-template-columns: 1fr; gap: 10px; }
+  .graduation-client-card { padding: 18px; }
+  .graduation-client-card__actions .button { min-height: 39px; }
   .graduation-client { padding-top: 21px; }
-  .graduation-client__heading { align-items: flex-start; flex-direction: column; gap: 13px; margin-bottom: 20px; }
-  .graduation-client__actions { flex-wrap: wrap; gap: 10px; }
-  .graduation-client__status { text-align: left; }
+  .graduation-client__heading { align-items: flex-start; flex-direction: column; gap: 10px; margin-bottom: 20px; }
   .graduation-gallery__empty-note { margin-top: 38px; padding: 16px; }
   .gallery-page { padding: 56px 0 65px; }
   .gallery-page__heading { margin-bottom: 34px; }
