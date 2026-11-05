@@ -9,6 +9,7 @@ const links = [
   ["Services", "/#services"],
   ["Portfolio", "/#work"],
   ["Gallery", "/gallery/"],
+  ["FUTA 25", "/futa-class-25/"],
   ["Packages", "/#packages"],
   ["About", "/#about"],
   ["Contact", "/#contact"],

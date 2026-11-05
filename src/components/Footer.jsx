@@ -24,6 +24,7 @@ const footerLinks = [
   ["Services", "/#services"],
   ["Portfolio", "/#work"],
   ["Gallery", "/gallery/"],
+  ["FUTA Class 25", "/futa-class-25/"],
   ["Packages", "/#packages"],
   ["About", "/#about"],
   ["Contact", "/#contact"],

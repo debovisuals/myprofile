@@ -9,6 +9,7 @@ import Contact from "./sections/Contact.jsx";
 import GalleryPage from "./sections/GalleryPage.jsx";
 import ClientGalleryPage from "./sections/ClientGalleryPage.jsx";
 import GraduationGalleryPage from "./sections/GraduationGalleryPage.jsx";
+import GraduationFeature from "./sections/GraduationFeature.jsx";
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
@@ -32,6 +33,7 @@ export default function App() {
             <Hero />
             <Services />
             <Portfolio />
+            <GraduationFeature />
             <Packages />
             <About />
             <Contact />
