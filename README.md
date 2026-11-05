@@ -17,6 +17,10 @@ A responsive photography and drone-services portfolio built with React, Vite, Fr
 - **Packages:** edit `src/data/packages.js`. Portrait, event and brand packages are samples; convocation prices and picture counts are listed as provided.
 - **About and contact copy:** edit the components in `src/sections/`.
 - **Images and videos:** add your files to the descriptive folders under `public/images/` or `public/videos/`, then update their paths in the data files. If an image is missing, the site displays `public/images/image-fallback.svg`.
+- **Public gallery:** visit `/gallery/`; its projects and filters use the entries in `src/data/projects.js`.
+- **Client galleries:** add a gallery entry to `src/data/clientGalleries.js`, including a unique `id`, client name, title, date, description and photo entries. Share `/client-gallery/?id=your-gallery-id` with that client. The included `sample-session` entry is sample content; replace it before sharing.
+
+Client galleries use unlisted links, not authentication. Their page is excluded from search indexing, but anyone with the URL can view it, and the image files are publicly accessible. Do not use these links for sensitive content; password protection requires a server-side access-control system.
 
 The contact form opens the visitor's email app with their name, email and message addressed to the configured business email. It does not save or submit form data to a server. No payment processing is included.
 Portfolio cards are sample entries, and the About section includes copy for you to personalize. Replace those before publishing.
@@ -43,6 +47,10 @@ src/
   sections/
   styles/
   utils/
+gallery/
+  index.html
+client-gallery/
+  index.html
 ```
 
 The bundled sample images are temporary licensed Unsplash imagery. Replace them with your own approved media when it is ready.

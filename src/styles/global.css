@@ -70,6 +70,14 @@ img, video { display: block; max-width: 100%; }
 .hero__vertical-label { position: absolute; top: 18px; right: 18px; color: white; font-size: .57rem; font-weight: 600; letter-spacing: .2em; writing-mode: vertical-rl; }
 
 .section { padding: 108px 0; border-top: 1px solid var(--line); }
+.gallery-page { min-height: calc(100vh - 180px); padding: 84px 0 108px; background: #f1f2ed; }
+.gallery-page__heading { max-width: 760px; margin-bottom: 48px; }
+.gallery-page__heading h1, .gallery-page__empty h1 { margin: 13px 0 14px; font-family: "Manrope", sans-serif; font-size: clamp(2.8rem, 6vw, 5.2rem); font-weight: 500; letter-spacing: -.075em; line-height: 1.02; }
+.gallery-page__heading > p:not(.eyebrow), .gallery-page__empty > p:not(.eyebrow) { max-width: 570px; margin: 0; color: var(--muted); font-size: .96rem; line-height: 1.8; }
+.gallery-page__date { display: block; margin-top: 17px; color: var(--accent); font-size: .7rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.gallery-page__note { margin: 48px 0 0; padding-top: 18px; border-top: 1px solid #daddd5; color: var(--muted); font-size: .8rem; line-height: 1.7; }
+.gallery-page__empty { padding-block: 70px; }
+.gallery-page__empty .button { margin-top: 23px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 45px; margin-bottom: 43px; }
 .section-heading h2 { max-width: 660px; margin-top: 12px; font-size: clamp(2.6rem, 5vw, 4.5rem); line-height: 1.06; }
 .section-heading__description { max-width: 400px; margin: 0 0 5px; color: var(--muted); font-size: .94rem; line-height: 1.8; }
@@ -238,6 +246,9 @@ img, video { display: block; max-width: 100%; }
   .hero__visual { min-height: 340px; }
   .hero__image-caption { right: 10px; bottom: 10px; left: 10px; padding: 11px; font-size: .6rem; }
   .section { padding: 60px 0; }
+  .gallery-page { padding: 56px 0 65px; }
+  .gallery-page__heading { margin-bottom: 34px; }
+  .gallery-page__heading h1, .gallery-page__empty h1 { font-size: 2.8rem; }
   .section-heading h2 { font-size: 2.65rem; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card, .service-card:nth-child(4), .service-card:last-child { grid-column: auto; min-height: 300px; }

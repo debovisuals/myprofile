@@ -20,12 +20,13 @@ function SocialIcon({ label }) {
 }
 
 const footerLinks = [
-  ["Home", "#home"],
-  ["Services", "#services"],
-  ["Portfolio", "#work"],
-  ["Packages", "#packages"],
-  ["About", "#about"],
-  ["Contact", "#contact"],
+  ["Home", "/#home"],
+  ["Services", "/#services"],
+  ["Portfolio", "/#work"],
+  ["Gallery", "/gallery/"],
+  ["Packages", "/#packages"],
+  ["About", "/#about"],
+  ["Contact", "/#contact"],
 ];
 
 export default function Footer() {
@@ -34,7 +35,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-main">
           <div>
-            <a className="wordmark wordmark--footer" href="#home">
+            <a className="wordmark wordmark--footer" href="/#home">
               Debo<span>VIsuals</span><small>{siteConfig.tagline.toUpperCase()}</small>
             </a>
             <p>Good stories deserve to be seen from every angle.</p>

@@ -5,12 +5,13 @@ import WhatsAppButton from "./WhatsAppButton.jsx";
 import { bookingMessage } from "../utils/whatsapp.js";
 
 const links = [
-  ["Home", "#home"],
-  ["Services", "#services"],
-  ["Portfolio", "#work"],
-  ["Packages", "#packages"],
-  ["About", "#about"],
-  ["Contact", "#contact"],
+  ["Home", "/#home"],
+  ["Services", "/#services"],
+  ["Portfolio", "/#work"],
+  ["Gallery", "/gallery/"],
+  ["Packages", "/#packages"],
+  ["About", "/#about"],
+  ["Contact", "/#contact"],
 ];
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
   return (
     <header className="site-header">
       <div className="container nav-bar">
-        <a className="wordmark" href="#home" aria-label="DeboVIsuals home" onClick={closeMenu}>
+        <a className="wordmark" href="/#home" aria-label="DeboVIsuals home" onClick={closeMenu}>
           Debo<span>VIsuals</span>
           <small>PHOTOGRAPHY · AERIAL · FILM</small>
         </a>
