@@ -8,11 +8,13 @@ import About from "./sections/About.jsx";
 import Contact from "./sections/Contact.jsx";
 import GalleryPage from "./sections/GalleryPage.jsx";
 import ClientGalleryPage from "./sections/ClientGalleryPage.jsx";
+import GraduationGalleryPage from "./sections/GraduationGalleryPage.jsx";
 
 export default function App() {
   const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
   const isGalleryPage = pathname === "/gallery";
   const isClientGalleryPage = pathname === "/client-gallery";
+  const isGraduationGalleryPage = pathname === "/futa-class-25";
 
   return (
     <>
@@ -23,6 +25,8 @@ export default function App() {
           <GalleryPage />
         ) : isClientGalleryPage ? (
           <ClientGalleryPage />
+        ) : isGraduationGalleryPage ? (
+          <GraduationGalleryPage />
         ) : (
           <>
             <Hero />

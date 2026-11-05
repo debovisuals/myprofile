@@ -13,6 +13,7 @@ export default defineConfig({
         main: resolve(projectRoot, "index.html"),
         gallery: resolve(projectRoot, "gallery/index.html"),
         clientGallery: resolve(projectRoot, "client-gallery/index.html"),
+        futaClass25: resolve(projectRoot, "futa-class-25/index.html"),
       },
     },
   },

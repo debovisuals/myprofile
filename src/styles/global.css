@@ -70,6 +70,19 @@ img, video { display: block; max-width: 100%; }
 .hero__vertical-label { position: absolute; top: 18px; right: 18px; color: white; font-size: .57rem; font-weight: 600; letter-spacing: .2em; writing-mode: vertical-rl; }
 
 .section { padding: 108px 0; border-top: 1px solid var(--line); }
+.graduation-gallery { min-height: calc(100vh - 180px); padding: 84px 0 48px; background: #f1f2ed; }
+.graduation-gallery__heading { max-width: 760px; margin: 0 auto 54px; text-align: center; }
+.graduation-gallery__heading h1 { margin: 14px 0 17px; font-family: "Manrope", sans-serif; font-size: clamp(3.2rem, 8vw, 7rem); font-weight: 500; letter-spacing: -.09em; line-height: .98; }
+.graduation-gallery__heading h1 em { font-family: var(--serif); font-weight: 400; }
+.graduation-gallery__intro { max-width: 550px; margin: 0 auto; color: var(--muted); font-size: .96rem; line-height: 1.8; }
+.graduation-gallery__share { margin-top: 24px; }
+.graduation-gallery__share-status { display: block; min-height: 1.5em; margin-top: 10px; color: var(--muted); font-size: .76rem; }
+.graduation-gallery__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px 20px; }
+.graduation-gallery__empty { display: grid; justify-items: center; padding: 75px 24px; border: 1px solid #daddd5; text-align: center; }
+.graduation-gallery__empty > svg { color: var(--accent); }
+.graduation-gallery__empty h2 { margin: 18px 0 7px; font-family: "Manrope", sans-serif; font-size: 1.4rem; font-weight: 600; letter-spacing: -.04em; }
+.graduation-gallery__empty p { max-width: 410px; margin: 0; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+.graduation-gallery__credit { margin: 48px 0 0; color: var(--muted); font-size: .7rem; letter-spacing: .08em; text-align: center; }
 .gallery-page { min-height: calc(100vh - 180px); padding: 84px 0 108px; background: #f1f2ed; }
 .gallery-page__heading { max-width: 760px; margin-bottom: 48px; }
 .gallery-page__heading h1, .gallery-page__empty h1 { margin: 13px 0 14px; font-family: "Manrope", sans-serif; font-size: clamp(2.8rem, 6vw, 5.2rem); font-weight: 500; letter-spacing: -.075em; line-height: 1.02; }
@@ -246,6 +259,11 @@ img, video { display: block; max-width: 100%; }
   .hero__visual { min-height: 340px; }
   .hero__image-caption { right: 10px; bottom: 10px; left: 10px; padding: 11px; font-size: .6rem; }
   .section { padding: 60px 0; }
+  .graduation-gallery { padding: 58px 0 34px; }
+  .graduation-gallery__heading { margin-bottom: 36px; }
+  .graduation-gallery__heading h1 { font-size: clamp(3.2rem, 14vw, 4.5rem); }
+  .graduation-gallery__grid { grid-template-columns: 1fr; gap: 24px; }
+  .graduation-gallery__empty { padding: 55px 20px; }
   .gallery-page { padding: 56px 0 65px; }
   .gallery-page__heading { margin-bottom: 34px; }
   .gallery-page__heading h1, .gallery-page__empty h1 { font-size: 2.8rem; }
